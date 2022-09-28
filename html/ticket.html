@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="/css/ticket.css">
+	<title>Client Create Ticket</title>
+</head>
+<body>
+   <h2>CUSTOMER TICKET PAGE</h2>
+   <form action="/php/insert.php" method="post">
+			
+      <p>
+         <label for="cname">Customer Name:</label>
+         <input type="text" name="customer_name" id="cname">
+      </p>
+      
+      <p>
+         <label for="contact">Contact/Email:</label>
+         <input type="text" name="email" id="contact">
+      </p>
+
+      <p>
+         <label for="priority">Priority:</label>
+         <select id="prio" name="priority">
+           <option value="High">High</option>
+           <option value="Medium">Medium</option>
+           <option value="Low">Low</option>
+         </select>
+      </p>
+      
+      <p>
+         <label for="message">Customer Reports/Message:</label>
+         <br>
+         <textarea id="message" name="issue" rows="4" cols="50"></textarea>
+      </p>
+
+      <input type="submit" value="Submit">
+   </form>
+</body>
+</html>
