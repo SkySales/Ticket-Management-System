@@ -28,11 +28,29 @@ CREATE TABLE IF NOT EXISTS `ticket` (
   `priority` varchar(255) NOT NULL,
   `status` varchar(50) NOT NULL,
   PRIMARY KEY (`Ticketid`)
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table tickets.ticket: ~1 rows (approximately)
+-- Dumping data for table tickets.ticket: ~5 rows (approximately)
 INSERT INTO `ticket` (`Ticketid`, `customer`, `email`, `issue`, `priority`, `status`) VALUES
-	(58, 'Marcross', 'skysales0321@gmail.com', 'testing klasmeyts', 'High', 'Ongoing');
+	(104, 'Test', 'skysales0321@gmail.com', 'TESTING ISSUE/REPORTS', 'High', 'Active'),
+	(109, 'Test', 'skysales0321@gmail.com', 'asdqweqwe', 'Medium', 'Active'),
+	(110, 'Test', 'skysales0321@gmail.com', 'asdqweqwe', 'High', 'Active'),
+	(111, 'Test', 'skysales0321@gmail.com', 'asdqweqwe', 'Low', 'Ticket Solve'),
+	(112, 'Test', 'skysales0321@gmail.com', 'asdqweqwe', 'High', 'Ticket Solve');
+
+-- Dumping structure for table tickets.users
+CREATE TABLE IF NOT EXISTS `users` (
+  `username` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL DEFAULT '',
+  `email` varchar(150) NOT NULL DEFAULT '',
+  `create_datetime` varchar(150) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table tickets.users: ~3 rows (approximately)
+INSERT INTO `users` (`username`, `password`, `email`, `create_datetime`) VALUES
+	('dekuchan21', 'e10adc3949ba59abbe56e057f20f883e', 'skysales0321@gmail.com', '2022-09-28 11:47:34'),
+	('asdasd', 'd553d148479a268914cecb77b2b88e6a', 'skysales0321@gmail.com', '2022-09-28 12:12:48'),
+	('admin', '0192023a7bbd73250516f069df18b500', 'skysales0321@gmail.com', '2022-09-28 16:32:12');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
