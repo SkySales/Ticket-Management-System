@@ -1,5 +1,8 @@
 # Ticket-Management-System
-SIMPLE PROJECT FOR TICKEING TOOL
+- Company Usage
+- Simple Backend Functioning Using PHP Programming
+- Simple Ticketing Tool
+- Database Included MySQL
 
 
 SHOWCASE
